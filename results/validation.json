@@ -1,0 +1,155 @@
+{
+  "release_date": "2026-10-23",
+  "T": 200.0,
+  "dt": 0.05,
+  "tail_fraction": 0.3,
+  "source_table_checks": [
+    {
+      "file": "source_snapshot/government_outputs/summary_tail_stats.csv",
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "file": "source_snapshot/firm_outputs/summary_tail_stats.csv",
+      "max_absolute_difference": 4.722874929335985e-07,
+      "tolerance": 6e-07,
+      "passed": true
+    },
+    {
+      "file": "source_snapshot/government_outputs/scan_C3_table.csv",
+      "max_absolute_difference": 7.771561172376096e-16,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "file": "source_snapshot/firm_outputs/scan_C3_table.csv",
+      "max_absolute_difference": 2.168404344971009e-19,
+      "tolerance": 2e-08,
+      "passed": true
+    },
+    {
+      "file": "source_snapshot/firm_outputs/scan_S2_table.csv",
+      "max_absolute_difference": 7.771561172376096e-16,
+      "tolerance": 2e-08,
+      "passed": true
+    }
+  ],
+  "numerical_diagnostics": [
+    {
+      "model": "government",
+      "equilibrium": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "eigenvalue_real_parts": [
+        -0.7,
+        -0.6000000000000001,
+        -0.10000000000000009
+      ],
+      "eigenvalue_imaginary_parts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "equilibrium_residual": 0.0,
+      "source_final": [
+        1e-09,
+        0.999999999,
+        0.9999990798568247
+      ],
+      "continuous_final": [
+        1.9369940943969846e-21,
+        1.2206976968912378e-21,
+        0.9999990798568683
+      ],
+      "source_vs_DOP853": [
+        {
+          "step": 0.05,
+          "max_path_difference": 0.999999999
+        },
+        {
+          "step": 0.025,
+          "max_path_difference": 0.999999999
+        },
+        {
+          "step": 0.0125,
+          "max_path_difference": 0.999999999
+        }
+      ]
+    },
+    {
+      "model": "firm",
+      "equilibrium": [
+        0.0003335434301643193,
+        0.00037778029871022017,
+        0.003112388598245297
+      ],
+      "eigenvalue_real_parts": [
+        -0.7492775906450442,
+        -0.08007501544554207,
+        -1.323020766621458
+      ],
+      "eigenvalue_imaginary_parts": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "equilibrium_residual": 1.8106176280507924e-17,
+      "source_final": [
+        0.0003335434323162471,
+        0.0003777803073570633,
+        0.003112408225932543
+      ],
+      "continuous_final": [
+        0.00033354343239298356,
+        0.00037778031142908936,
+        0.0031124089145847167
+      ],
+      "source_vs_DOP853": [
+        {
+          "step": 0.05,
+          "max_path_difference": 0.0021504320416116246
+        },
+        {
+          "step": 0.025,
+          "max_path_difference": 0.001067902292261308
+        },
+        {
+          "step": 0.0125,
+          "max_path_difference": 0.0005321485864887565
+        }
+      ]
+    }
+  ],
+  "floor_sensitivity": [
+    {
+      "floor": 1e-06,
+      "y_final": 0.999999
+    },
+    {
+      "floor": 1e-09,
+      "y_final": 0.999999999
+    },
+    {
+      "floor": 1e-18,
+      "y_final": 0.9999999999987372
+    },
+    {
+      "floor": 1e-30,
+      "y_final": 0.44193071597466965
+    },
+    {
+      "floor": 1e-60,
+      "y_final": 1.2208070071197042e-21
+    }
+  ],
+  "interpretation": "Source-table reproduction does not imply convergence to the unclipped ODE. See the clipping diagnostic.",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  }
+}

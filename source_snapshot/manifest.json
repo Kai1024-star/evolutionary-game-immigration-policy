@@ -1,0 +1,38 @@
+{
+  "packaged_on": "2026-10-23",
+  "origin": "User-supplied undergraduate thesis simulation folder (Mars Plan)",
+  "files": [
+    {
+      "file": "source_snapshot/replicator_compare_jp.py",
+      "sha256": "fe991f71cb74ebe2fd696635bde336ad4a606ebb37f77943e86c7711b9a0a5e0"
+    },
+    {
+      "file": "source_snapshot/replicator_paper_ready_jp.py",
+      "sha256": "634bd95bebcebbcad7b817632b091ba9dcbab5abf56479d54b25f97f5996b6e0"
+    },
+    {
+      "file": "source_snapshot/replicator_sim_AB_no_pandas.py",
+      "sha256": "348c8071841f25db4280d6d3f5617092b2422c944a7d342070c3087e1f23a280"
+    },
+    {
+      "file": "source_snapshot/government_outputs/summary_tail_stats.csv",
+      "sha256": "84f872471f8109884f2d838eb696f5d7bde515564556781a4535c4a97cf7a234"
+    },
+    {
+      "file": "source_snapshot/government_outputs/scan_C3_table.csv",
+      "sha256": "d6ae7ce68cb8754405a66722cc506044e94d7419e5ab2db6c33cbacc01b1576a"
+    },
+    {
+      "file": "source_snapshot/firm_outputs/scan_S2_table.csv",
+      "sha256": "2572e7527dac56006c7cf8d972f5d97b870d2b0d5b6e46cdd1b3ff48bfee74f5"
+    },
+    {
+      "file": "source_snapshot/firm_outputs/summary_tail_stats.csv",
+      "sha256": "43acf4d09afbef115e02e97628887109244a432513b9ab8337d24eee07085474"
+    },
+    {
+      "file": "source_snapshot/firm_outputs/scan_C3_table.csv",
+      "sha256": "8028794f9f5136ade15ab5113d25b37ac9811056875da594f8ba7c3f737f7839"
+    }
+  ]
+}
